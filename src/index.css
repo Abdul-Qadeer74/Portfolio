@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@theme {
+  --breakpoint-xs: 10rem;
+}
+
+#navbar {
+  opacity: 1;
+  animation: move 0.7s linear forwards;
+  transform: translateY(-50px);
+}
+@keyframes move {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#menu {
+  opacity: 1;
+  animation: moveright 0.7s linear forwards;
+  transform: translateY(-100px);
+  position: absolute;
+  top: 300%;
+  left: 0;
+  width: 100%;
+}
+
+@keyframes moveright {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
