@@ -4,7 +4,7 @@ import { Phone, Mail, CircleUserRound } from "lucide-react";
 // import { faFacebook } from "@fortawesome/free-brand-svg-icons";
 const Left1 = () => {
   return (
-    <div className="sm:w-[45%] xs:w-[95%] sm:h-[95%] xs:h-[50%]  rounded-4xl flex  justify-evenly flex-col">
+    <div className="sm:w-[45%] xs:w-[95%] sm:h-[95%] xs:h-[40%]  rounded-4xl flex  justify-evenly flex-col">
       <div className="text-xl text-white w-[90%] h-[70%]  leading-10">
         My name is"
         <span className="font-extrabold text-sky-300 text-2xl">
@@ -42,7 +42,7 @@ const Left1 = () => {
             <div>
               <i className="fa-brands fa-facebook"></i>
             </div>
-            <div>{/* <FontAwesomeIcon icon={faFacebook} /> */}</div>
+            <div></div>
             <div></div>
             <div></div>
           </div>
