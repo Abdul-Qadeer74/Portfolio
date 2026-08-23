@@ -5,7 +5,7 @@ import Right from "./Right";
 const Navbar = () => {
   return (
     <div
-      className="h-[10%] lg:w-[60%] w-[95%]  border border-sky-200 rounded-4xl text-sky-200 flex items-center justify-evenly shadow-xl shadow-sky-200/20 "
+      className="h-[7%] lg:w-[70%] w-[95%]  border border-sky-400 rounded-4xl text-sky-200 flex items-center justify-evenly "
       id="navbar"
     >
       <Left />

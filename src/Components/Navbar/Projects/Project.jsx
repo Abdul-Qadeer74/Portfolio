@@ -33,12 +33,30 @@ export default function OverLap() {
     },
     {
       id: 4,
-      title: "Calculator",
+      title: "Calulator",
       description: "Calculator to help you calculate value.",
       link: "https://calculatorbymq.netlify.app",
       x: 28,
       y: 22,
       z: 4,
+    },
+    {
+      id: 5,
+      title: "Calculator",
+      description: "Calculator to help you calculate value.",
+      link: "https://calculatorbymq.netlify.app",
+      x: 36,
+      y: 28,
+      z: 5,
+    },
+    {
+      id: 6,
+      title: "Task App",
+      description: "Daily task save app.",
+      link: "https://taskbymq.netlify.app",
+      x: 44,
+      y: 34,
+      z: 6,
     },
   ]);
 
@@ -58,12 +76,12 @@ export default function OverLap() {
   };
 
   return (
-    <div className="relative sm:w-[45%] xs:w-[95%] sm:h-[95%] xs:h-[60%] overflow-hidden rounded-2xl ">
+    <div className="relative sm:w-full xs:w-[95%] sm:h-135 xs:h-[60%] overflow-hidden rounded-4xl  mt-2 border border-sky-400/50">
       {projects.map((project) => (
         <div
           key={project.id}
           onClick={() => handleClick(project.id)}
-          className=" absolute flex sm:h-[60%] xs:h-[70%] w-[70%] cursor-pointer flex-col justify-between rounded-2xl border border-sky-400 bg-black p-6 text-white shadow-xl shadow-black transition-all duration-500
+          className=" absolute flex h-[60%] w-[50%]  cursor-pointer flex-col justify-between rounded-2xl border border-sky-400 bg-black p-6 text-white shadow-xl shadow-sky-400/50 transition-all duration-500
           "
           style={{
             left: `${project.x}%`,

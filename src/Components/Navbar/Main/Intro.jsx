@@ -4,7 +4,7 @@ import Right1 from "./Rightside/Right1";
 
 const Intro = () => {
   return (
-    <div className=" w-full border-sky-200 border h-[85%] text-white rounded-4xl shadow-2xl shadow-sky-200/60 flex xs:flex-col sm:flex-row    items-center justify-evenly ">
+    <div className=" mt-2 w-full  h-[65%] text-white bg-sky-400/50 rounded-4xl  flex xs:flex-col sm:flex-row    items-center justify-evenly ">
       <Left1 />
       <Right1 />
     </div>
