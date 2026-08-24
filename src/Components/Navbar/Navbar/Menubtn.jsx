@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+import About from "../Main/Pages/About";
+import Projects from "../Main/Pages/Projects";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,28 +13,33 @@ function App() {
 
   return (
     <div>
-      <button onClick={clickBtn}>{isOpen ? <Menu /> : <Menu />}</button>
+      <button onClick={clickBtn}>{<Menu />}</button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+        <div className="inset-0 fixed h-full top-30 z-999 flex items-center justify-center bg-black/50 backdrop-blur-lg">
           <div
             className="bg-black p-6 rounded-4xl flex flex-col gap-4 w-full shadow-2xl shadow-sky-200/60 border border-sky-200 "
             id="menu"
           >
-            <button className="px-4 py-2 bg-black/70 border border-sky-200 text-sky-200 rounded-4xl shadow-xl shadow-sky-200/10 [text-shadow:0_0_1px_white,0_0_2px_white,0_0_3px_white,0_0_1px_white]">
-              About Us
-            </button>
             <button
+              onClick={() => setIsOpen(false)}
               className="px-4 py-2  bg-black/70 border border-sky-200 text-sky-200 rounded-4xl shadow-xl shadow-sky-200/10
             [text-shadow:0_0_1px_white,0_0_2px_white,0_0_3px_white,0_0_1px_white]"
             >
-              Projects
+              <Link to="/">Home</Link>
             </button>
             <button
+              onClick={() => setIsOpen(false)}
+              className="px-4 py-2 bg-black/70 border border-sky-200 text-sky-200 rounded-4xl shadow-xl shadow-sky-200/10 [text-shadow:0_0_1px_white,0_0_2px_white,0_0_3px_white,0_0_1px_white]"
+            >
+              <Link to="/About">About us</Link>
+            </button>
+            <button
+              onClick={() => setIsOpen(false)}
               className="px-4 py-2  bg-black/70 border border-sky-200 text-sky-200 rounded-4xl shadow-xl shadow-sky-200/10
             [text-shadow:0_0_1px_white,0_0_2px_white,0_0_3px_white,0_0_1px_white]"
             >
-              Contacts
+              <Link to="/Project">Project</Link>
             </button>
 
             <button
